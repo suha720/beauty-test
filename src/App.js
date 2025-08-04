@@ -17,7 +17,7 @@ const ProductList = styled.div`
 
   margin-bottom: 16px;
 
-  /* justify-content: center; */
+  justify-content: space-between;
 
   align-items: center;
   background: #fff;
@@ -53,7 +53,7 @@ function App() {
   useEffect(() => {
     // getBeautys();
     const fetchData = async () => {
-      const json = await getBeautys(); // ✅ await 사용
+      const json = await getBeautys();
       const check = Array.isArray(json);
       if (check) {
         setBeautys(json);

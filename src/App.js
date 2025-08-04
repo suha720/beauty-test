@@ -45,6 +45,10 @@ const ProductImg = styled.div`
 `;
 
 const ProductText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 `;
 
